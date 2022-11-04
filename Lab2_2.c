@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-const double e = 0.0001;
 
 double integral(double x);
 double delta(double a, double b);
@@ -68,6 +67,7 @@ double integral(double x){
 double delta(double a, double b){
     int N = 0;
     double I1, I2;
+    const double e = 0.0001;
     while(fabs(I2-I1)>e){
         N = N + 2;
         I1=left_rectangle_method(a, b, N);
