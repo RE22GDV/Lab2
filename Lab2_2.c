@@ -55,7 +55,7 @@ int main() {
         else {printf("\nIncorrect solution number entered\n\n"); while_flag=0;}
     }
     print_output_data(a, b, n, I, delta(a,b));
-    return 0;
+    return;
 }
 
 
