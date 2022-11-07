@@ -13,7 +13,7 @@ void print_output_data(double a, double b, unsigned int n, double I, int N);
 
 
 int main() {
-    unsigned int choice_solution, while_flag=0, flag_text_input=0;
+    unsigned int choice_solution, while_flag = 0, flag_text_input = 0;
     double a, b, I;
     unsigned int n;
 
@@ -55,6 +55,7 @@ int main() {
         else {printf("\nIncorrect solution number entered\n\n"); while_flag=0;}
     }
     print_output_data(a, b, n, I, delta(a,b));
+    return 0;
 }
 
 
@@ -88,6 +89,7 @@ void print_output_data(double a, double b, unsigned int n, double I, int N){
            "\n============================================"
            "\n|            N=%d                        |"
            "\n============================================", a, b, n, I,N);
+    return;
 }
 
 double left_rectangle_method(double a, double b, unsigned int n){
